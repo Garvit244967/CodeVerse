@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeVerse</title>
+
+    <!-- Font Awesome (Search Icon) -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+    <a href="#">
+        <img src="CodeVerse.jpeg" alt="CodeVerse Logo">
+        <span>CodeVerse</span>
+    </a>
+</div>
+
+    <div class="course-search" role="search">
+        <button class="search-toggle" type="button" aria-label="Open course search" aria-expanded="false" aria-controls="course-search-input">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </button>
+        <div class="search-field">
+            <i class="fa-solid fa-magnifying-glass search-field-icon" aria-hidden="true"></i>
+            <label class="sr-only" for="course-search-input">Search courses</label>
+            <input id="course-search-input" type="search" placeholder="Search courses..." autocomplete="off" aria-describedby="search-status">
+        </div>
+        <p id="search-status" class="search-status" role="status" aria-live="polite"></p>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <h1>CodeVerse</h1>
+
+        <p>
+            Learn Programming for Free.
+            Master HTML, CSS, JavaScript, Python,
+            Data Structures and much more.
+        </p>
+
+        <a href="#courses" class="btn">
+            Get Started
+        </a>
+
+    </div>
+
+</header>
+
+<!-- ================= COURSES ================= -->
+
+<section id="courses" class="courses">
+
+    <h2>Featured Courses</h2>
+
+    <div class="course-container">
+        <div class="card">
+            <h3>Java</h3>
+            <p>Learn Core Java, OOP, Collections, Multithreading, and JDBC.</p>
+            <a href = "videos/java.html" class = "btn">Start Learning</a>
+        </div>
+        <div class="card">
+            <h3>DSA</h3>
+            <p>Master Data Structures, Algorithms, and coding interview preparation.</p>
+        </div>
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Learn the building blocks of every website.</p>
+            <a href = "videos/html.html" class = "btn"> Start Learning</a>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Create beautiful responsive websites.</p>
+            <a href="videos/css.html" class="btn">
+            Start Learning
+        </a>
+    </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Make your websites interactive.</p>
+            <a href = "videos/js.html" class = "btn"> Start Learning</a>
+        </div>
+
+        <div class="card">
+            <h3>Python</h3>
+            <p>Programming for AI, Automation and Data Science.</p>
+        </div>
+
+        <div class="card">
+            <h3>C++</h3>
+            <p>Master OOP, STL and Data Structures.</p>
+            <a href = "videos/cpp.html" class = "btn"> Start Learning</a>
+        </div>
+
+        <div class="card">
+            <h3>React</h3>
+            <p>Build modern web applications.</p>
+            <a href = "videos/react.html" class = "btn"> Start Learning</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <h2>CodeVerse</h2>
+
+            <p>
+                Learn programming with tutorials,
+                projects and interactive courses.
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Popular Courses</h3>
+
+            <ul>
+
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Python</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Contact</h3>
+
+            <p>📧 support@codeverse.com</p>
+            <p>🌐 www.codeverse.com</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        ©️ 2026 CodeVerse. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>

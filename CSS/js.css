@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#ffffff;
+}
+
+/* Header */
+
+.header{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    text-align:center;
+    padding:50px 20px;
+}
+
+.header h1{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.header p{
+    font-size:20px;
+    color:#e5e7eb;
+}
+
+/* Video Section */
+
+.video-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+}
+
+.video-section iframe{
+    width:90%;
+    max-width:1000px;
+    height:560px;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Playlist */
+
+.playlist{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.playlist h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:32px;
+    color:#38bdf8;
+}
+
+.playlist ul{
+    list-style:none;
+}
+
+.playlist ul li{
+    background:#334155;
+    margin:12px 0;
+    padding:15px 20px;
+    border-radius:10px;
+    font-size:18px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.playlist ul li:hover{
+    background:#2563eb;
+    transform:translateX(10px);
+}
+
+/* Back Button */
+
+.back-home{
+    display:flex;
+    justify-content:center;
+    margin:50px 0;
+}
+
+.back-btn{
+    display:inline-block;
+    background:#7c3aed;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#5b21b6;
+    transform:scale(1.05);
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    .header h1{
+        font-size:32px;
+    }
+
+    .header p{
+        font-size:16px;
+    }
+
+    .video-section iframe{
+        height:300px;
+    }
+
+    .playlist h2{
+        font-size:26px;
+    }
+
+    .playlist ul li{
+        font-size:16px;
+        padding:12px 15px;
+    }
+
+    .back-btn{
+        padding:12px 25px;
+        font-size:18px;
+    }
+}

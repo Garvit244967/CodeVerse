@@ -1,0 +1,156 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    padding:50px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+    opacity:.9;
+}
+
+/* ===========================
+   VIDEO
+=========================== */
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.video-container iframe{
+    width: 900px;
+    max-width: 100%;
+    height: 500px;
+    border-radius: 12px;
+}
+
+/* ===========================
+   COURSE TOPICS
+=========================== */
+
+.playlist{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+}
+
+.playlist h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.playlist ul{
+    list-style:none;
+}
+
+.playlist li{
+    background:#334155;
+    margin:12px 0;
+    padding:15px 20px;
+    border-radius:10px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.playlist li:hover{
+    background:#2563eb;
+    transform:translateX(8px);
+}
+
+/* ===========================
+   BACK BUTTON
+=========================== */
+
+.back-home{
+    display:flex;
+    justify-content:center;
+    margin:50px 0;
+}
+
+.back-btn{
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:20px;
+    color:#94a3b8;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:30px;
+    }
+
+    .video-container iframe{
+        height:250px;
+    }
+
+    .playlist{
+        padding:20px;
+    }
+
+    .playlist li{
+        font-size:15px;
+    }
+
+    .back-btn{
+        padding:12px 25px;
+        font-size:16px;
+    }
+}
