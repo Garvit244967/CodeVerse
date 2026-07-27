@@ -11,10 +11,10 @@ function createSearch() {
         input: document.querySelector('#course-search-input'),
         toggle: document.querySelector('.search-toggle'),
         status: document.querySelector('#search-status'),
-        cards: Array.from(document.querySelectorAll('.course-container .card')),
+        cards: Array.from(document.querySelectorAll('.course-container .course-card')),
         noResultTimer: null
     };
-
+    console.log(search.cards);
     if (!search.container || !search.input || !search.toggle || !search.status) return;
 
     search.cards.forEach((card) => {
@@ -51,7 +51,9 @@ function searchCourses(search) {
     }
 
     const results = search.cards.filter((card) => card.dataset.searchTerms.includes(query));
-    highlightResults(results);
+    if(results.length){
+    results[0].classList.add("search-match");
+}
 
     if (results.length) {
         search.status.textContent = `${results.length} course${results.length === 1 ? '' : 's'} found.`;
@@ -74,8 +76,15 @@ function clearHighlights(cards) {
 }
 
 /** Scrolls smoothly to the first matching course card. */
-function scrollToResult(result) {
-    result.scrollIntoView({ behavior: 'smooth', block: 'center' });
+function scrollToResult(result){
+
+    const y = result.getBoundingClientRect().top + window.pageYOffset - 120;
+
+    window.scrollTo({
+        top:y,
+        behavior:"smooth"
+    });
+
 }
 
 /** Announces a missing course briefly, then clears the message. */
