@@ -1215,3 +1215,8 @@ hr{
 }
 
 }
+.search-match{
+    border:4px solid #00c3ff !important;
+    box-shadow:0 0 25px #00c3ff !important;
+    transform:scale(1.04);
+}
