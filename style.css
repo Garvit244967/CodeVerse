@@ -951,3 +951,212 @@ hr{
 }
 
 }
+/*========================================
+          COURSES SECTION
+========================================*/
+
+.courses{
+    padding:80px 8%;
+    background:#0f172a;
+}
+
+.section-title{
+    text-align:center;
+    color:#ffffff;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:50px;
+}
+
+/*========================================
+          COURSE GRID
+========================================*/
+
+.course-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+/*========================================
+          COURSE CARD
+========================================*/
+
+.course-card{
+    background:#1e293b;
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid rgba(59,130,246,.25);
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    transition:all .4s ease;
+    position:relative;
+}
+
+.course-card img{
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    background: #101828;
+    padding: 8px;
+    display: block;
+}
+
+.course-content{
+    padding:25px;
+}
+
+.course-content h3{
+    color:#ffffff;
+    font-size:24px;
+    margin:15px 0;
+    transition:.3s;
+}
+
+.teacher{
+    color:#cbd5e1;
+    font-size:15px;
+    margin-bottom:20px;
+}
+
+.course-info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#dbeafe;
+    font-size:15px;
+    margin-bottom:22px;
+}
+
+/*========================================
+             BADGES
+========================================*/
+
+.badge{
+    display:inline-block;
+    padding:7px 16px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+    color:#ffffff;
+}
+
+.beginner{
+    background:#60a5fa;
+}
+
+.intermediate{
+    background:#3b82f6;
+}
+
+.advanced{
+    background:#1d4ed8;
+}
+
+/*========================================
+             BUTTON
+========================================*/
+
+.course-card a{
+    text-decoration:none;
+}
+
+.course-card button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(90deg,#3b82f6,#0ea5e9);
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.35s ease;
+}
+
+.course-card button:hover{
+    background:linear-gradient(90deg,#2563eb,#0284c7);
+}
+
+/*========================================
+           HOVER EFFECTS
+========================================*/
+
+.course-card:hover{
+    transform:translateY(-12px);
+    border-color:#60a5fa;
+    box-shadow:
+        0 25px 45px rgba(0,0,0,.45),
+        0 0 20px rgba(59,130,246,.35);
+}
+
+.course-card:hover img{
+    transform:scale(1.08);
+}
+
+.course-card:hover h3{
+    color:#60a5fa;
+}
+
+.course-card:hover .teacher{
+    color:#ffffff;
+}
+
+/*========================================
+          RESPONSIVE
+========================================*/
+
+@media (max-width:992px){
+
+.course-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:768px){
+
+.course-container{
+    grid-template-columns:1fr;
+}
+
+.section-title{
+    font-size:34px;
+}
+
+.course-content h3{
+    font-size:22px;
+}
+
+.course-card img{
+    height:210px;
+}
+
+}
+
+@media (max-width:480px){
+
+.courses{
+    padding:60px 20px;
+}
+
+.course-content{
+    padding:20px;
+}
+
+.course-card img{
+    height:190px;
+}
+
+.section-title{
+    font-size:30px;
+}
+
+.course-content h3{
+    font-size:20px;
+}
+
+.course-card button{
+    font-size:15px;
+}
+
+}
