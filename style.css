@@ -550,3 +550,404 @@ hr{
         text-align:right;
     }
 }
+/* ===========================================
+   RESPONSIVE DESIGN
+=========================================== */
+
+/* ---------- Tablets ---------- */
+
+@media (max-width:1024px){
+
+    .container{
+        width:95%;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero-image{
+        width:100%;
+    }
+
+    .hero-image img{
+        width:80%;
+    }
+
+    .course-container{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+    }
+
+    .course-card{
+        width:100%;
+    }
+
+    .search-field{
+        width:220px;
+    }
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
+
+    }
+
+    nav ul{
+
+        flex-direction:column;
+        width:100%;
+        text-align:center;
+        gap:15px;
+
+    }
+
+    .logo{
+
+        font-size:26px;
+
+    }
+
+    .hero{
+
+        flex-direction:column;
+        padding:30px 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:38px;
+
+    }
+
+    .hero p{
+
+        font-size:17px;
+
+    }
+
+    .hero-image img{
+
+        width:100%;
+
+    }
+
+    .course-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .course-card{
+
+        width:100%;
+
+    }
+
+    .course-search{
+
+        width:100%;
+        margin:20px 0;
+
+    }
+
+    .search-field{
+
+        width:100%;
+
+    }
+
+    .playlist{
+
+        width:95%;
+        padding:20px;
+
+    }
+
+    .playlist h2{
+
+        font-size:28px;
+
+    }
+
+    .playlist li{
+
+        font-size:16px;
+
+    }
+
+    footer{
+
+        text-align:center;
+
+    }
+
+}
+
+
+/* ---------- Small Phones ---------- */
+
+@media (max-width:480px){
+
+    .hero h1{
+
+        font-size:30px;
+
+    }
+
+    .hero p{
+
+        font-size:15px;
+
+    }
+
+    .btn{
+
+        width:100%;
+        text-align:center;
+
+    }
+
+    .course-card{
+
+        padding:15px;
+
+    }
+
+    .course-card img{
+
+        height:180px;
+
+    }
+
+    .playlist{
+
+        padding:15px;
+
+    }
+
+    .playlist h2{
+
+        font-size:24px;
+
+    }
+
+}
+
+/*==============================
+ HERO SECTION
+===============================*/
+
+.hero{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:90px 10%;
+    min-height:90vh;
+    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+    overflow:hidden;
+
+}
+
+.hero-content{
+
+    max-width:600px;
+    animation:fadeUp 1.2s ease;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+    color:white;
+    line-height:1.2;
+
+}
+
+.hero h1 span{
+
+    color:#3cc9ff;
+
+}
+
+.hero p{
+
+    margin:25px 0;
+    color:#d1d5db;
+    font-size:20px;
+    line-height:1.8;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+    gap:20px;
+
+}
+
+.btn{
+
+    padding:15px 35px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.4s;
+
+}
+
+.primary-btn{
+
+    background:#3cc9ff;
+    color:black;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 10px 30px rgba(60,201,255,.5);
+
+}
+
+.secondary-btn{
+
+    border:2px solid #3cc9ff;
+    color:#3cc9ff;
+
+}
+
+.secondary-btn:hover{
+
+    background:#3cc9ff;
+    color:black;
+
+}
+
+.hero-image{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+.hero-image img{
+
+    width:520px;
+    filter:drop-shadow(0 0 30px rgba(60,201,255,.35));
+
+}
+
+/*==============================
+ ANIMATIONS
+===============================*/
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes glow{
+
+    from{
+
+        text-shadow:0 0 10px #3cc9ff;
+
+    }
+
+    to{
+
+        text-shadow:0 0 30px #3cc9ff;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+    flex-direction:column-reverse;
+    text-align:center;
+    padding:50px 25px;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:320px;
+    margin-bottom:40px;
+
+}
+
+}
